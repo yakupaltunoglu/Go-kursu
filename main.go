@@ -1,9 +1,7 @@
 package main
 
 import (
-	"fmt"
-	"golesson/channels"
-	"time"
+	"golesson/error_handling"
 )
 
 func main() {
@@ -38,19 +36,23 @@ func main() {
 	// fmt.Println("Maindeki sayı:", sayilar[0])
 	// structs.Demo2()
 
-	ciftSayiCn := make(chan int)
-	tekSayiCn := make(chan int)
+	// ciftSayiCn := make(chan int)
+	// tekSayiCn := make(chan int)
 
-	go channels.CiftSayilar(ciftSayiCn)
-	go channels.TekSayilar(tekSayiCn)
+	// go channels.CiftSayilar(ciftSayiCn)
+	// go channels.TekSayilar(tekSayiCn)
 
-	ciftSayiToplam, tekSayiToplam := <-ciftSayiCn, <-tekSayiCn
+	// ciftSayiToplam, tekSayiToplam := <-ciftSayiCn, <-tekSayiCn
 
-	carpim := ciftSayiToplam * tekSayiToplam
+	// carpim := ciftSayiToplam * tekSayiToplam
 
-	fmt.Println("Çarpım :", carpim)
+	// fmt.Println("Çarpım :", carpim)
 
-	time.Sleep(5 * time.Second)
+	// time.Sleep(5 * time.Second)
 
-	fmt.Println("Main bitti")
+	// fmt.Println("Main bitti")
+
+	// defer_statement.Demo3()
+	// error_handling.Demo1()
+	error_handling.Demo2()
 }
