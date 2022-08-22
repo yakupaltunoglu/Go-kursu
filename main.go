@@ -1,7 +1,7 @@
 package main
 
 import (
-	"golesson/error_handling"
+	"golesson/string_func"
 )
 
 func main() {
@@ -54,5 +54,9 @@ func main() {
 
 	// defer_statement.Demo3()
 	// error_handling.Demo1()
-	error_handling.Demo2()
+
+	// fmt.Println(error_handling.TahminEt2(102))
+	// string_func.Demo1()
+	string_func.Demo2()
+
 }
